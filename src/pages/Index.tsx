@@ -1,12 +1,157 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { ArrowRight, Code, Palette, Smartphone, Zap, Star, Users, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 
 const Index = () => {
+  const features = [
+    {
+      icon: <Code className="h-8 w-8" />,
+      title: "Custom Development",
+      description: "Tailored web solutions built with cutting-edge technologies"
+    },
+    {
+      icon: <Palette className="h-8 w-8" />,
+      title: "Modern Design",
+      description: "Beautiful, user-friendly interfaces that convert visitors"
+    },
+    {
+      icon: <Smartphone className="h-8 w-8" />,
+      title: "Responsive Design",
+      description: "Perfect performance across all devices and screen sizes"
+    },
+    {
+      icon: <Zap className="h-8 w-8" />,
+      title: "Fast Performance",
+      description: "Lightning-fast websites optimized for speed and SEO"
+    }
+  ];
+
+  const stats = [
+    { icon: <Users className="h-6 w-6" />, value: "500+", label: "Happy Clients" },
+    { icon: <Code className="h-6 w-6" />, value: "1000+", label: "Projects Completed" },
+    { icon: <Award className="h-6 w-6" />, value: "5+", label: "Years Experience" },
+    { icon: <Star className="h-6 w-6" />, value: "98%", label: "Client Satisfaction" }
+  ];
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-slide-in-left">
+              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 text-shadow">
+                Web Development
+                <span className="block gradient-text">Solutions</span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                Transform your digital presence with our cutting-edge web development services. 
+                We create stunning, high-performance websites that drive results.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/contact">
+                  <Button className="gradient-blue text-white px-8 py-3 text-lg font-semibold rounded-full hover:scale-105 transition-transform duration-200 box-shadow-3d">
+                    Get Started
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Link to="/portfolio">
+                  <Button variant="outline" className="px-8 py-3 text-lg font-semibold rounded-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-200">
+                    View Portfolio
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            
+            <div className="animate-slide-in-right">
+              <div className="relative">
+                <div className="absolute inset-0 gradient-blue rounded-3xl transform rotate-6 animate-pulse-slow"></div>
+                <div className="relative bg-white rounded-3xl p-8 box-shadow-3d card-3d">
+                  <div className="grid grid-cols-3 gap-4 mb-6">
+                    <div className="h-4 bg-gradient-to-r from-blue-400 to-blue-600 rounded animate-pulse"></div>
+                    <div className="h-4 bg-gradient-to-r from-indigo-400 to-indigo-600 rounded animate-pulse delay-75"></div>
+                    <div className="h-4 bg-gradient-to-r from-purple-400 to-purple-600 rounded animate-pulse delay-150"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="h-6 bg-gray-200 rounded animate-pulse"></div>
+                    <div className="h-6 bg-gray-200 rounded w-3/4 animate-pulse delay-75"></div>
+                    <div className="h-6 bg-gray-200 rounded w-1/2 animate-pulse delay-150"></div>
+                  </div>
+                  <div className="mt-6 flex justify-between">
+                    <div className="h-8 w-8 bg-blue-500 rounded-full animate-float"></div>
+                    <div className="h-8 w-8 bg-indigo-500 rounded-full animate-float delay-1000"></div>
+                    <div className="h-8 w-8 bg-purple-500 rounded-full animate-float delay-2000"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Netzdoor?</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We combine creativity with technical expertise to deliver exceptional web solutions
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardContent className="p-6 text-center">
+                  <div className="gradient-blue rounded-full w-16 h-16 flex items-center justify-center text-white mx-auto mb-4 hover:scale-110 transition-transform duration-200">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-indigo-600">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            {stats.map((stat, index) => (
+              <div key={index} className="animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="text-white/80 mb-2 flex justify-center">
+                  {stat.icon}
+                </div>
+                <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
+                <div className="text-blue-200">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Let's bring your vision to life with a stunning website that delivers results
+          </p>
+          <Link to="/contact">
+            <Button className="gradient-blue text-white px-12 py-4 text-lg font-semibold rounded-full hover:scale-105 transition-transform duration-200 box-shadow-3d">
+              Start Your Project
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };
