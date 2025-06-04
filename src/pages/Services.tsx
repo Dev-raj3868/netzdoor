@@ -1,4 +1,6 @@
+
 import { Link } from 'react-router-dom';
+import { Code, Palette, Smartphone, ShoppingCart, Search, Settings } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,46 +9,52 @@ import { Button } from '@/components/ui/button';
 const Services = () => {
   const services = [
     {
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      icon: Code,
       title: "Custom Web Development",
-      description: "Bespoke websites built from scratch using modern frameworks like React, Vue, and Angular",
-      features: ["React & Next.js", "Vue.js", "Node.js Backend", "API Integration"],
-      price: "Starting from $2,999"
+      description: "Build scalable, high-performance web applications tailored to your business needs using cutting-edge technologies and best practices.",
+      features: ["React & Next.js Development", "Full-Stack Solutions", "API Development & Integration", "Database Design & Optimization"],
+      price: "Starting from $2,999",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
     },
     {
-      image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80",
+      icon: Palette,
       title: "UI/UX Design",
-      description: "Beautiful, intuitive designs that provide exceptional user experiences",
-      features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
-      price: "Starting from $1,499"
+      description: "Create stunning, user-centered designs that drive engagement and conversions through intuitive interfaces and exceptional user experiences.",
+      features: ["User Research & Analysis", "Wireframing & Prototyping", "Visual Design Systems", "Usability Testing"],
+      price: "Starting from $1,499",
+      image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80"
     },
     {
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+      icon: Smartphone,
       title: "Responsive Design",
-      description: "Mobile-first designs that work perfectly on all devices and screen sizes",
-      features: ["Mobile Optimization", "Cross-browser Testing", "Performance Optimization", "PWA Development"],
-      price: "Starting from $999"
+      description: "Ensure your website looks perfect and functions flawlessly across all devices, from mobile phones to desktop computers.",
+      features: ["Mobile-First Approach", "Cross-Browser Compatibility", "Performance Optimization", "Progressive Web Apps"],
+      price: "Starting from $999",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
     },
     {
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+      icon: ShoppingCart,
       title: "E-commerce Solutions",
-      description: "Complete online stores with payment integration and inventory management",
-      features: ["Shopify & WooCommerce", "Payment Gateway", "Inventory Management", "Analytics"],
-      price: "Starting from $3,999"
+      description: "Build powerful online stores with secure payment processing, inventory management, and analytics to boost your sales.",
+      features: ["Custom E-commerce Platforms", "Payment Gateway Integration", "Inventory Management Systems", "Sales Analytics & Reporting"],
+      price: "Starting from $3,999",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
     },
     {
-      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80",
+      icon: Search,
       title: "SEO Optimization",
-      description: "Improve your search rankings and drive more organic traffic to your website",
-      features: ["Technical SEO", "Content Optimization", "Performance Audit", "Local SEO"],
-      price: "Starting from $799"
+      description: "Improve your search engine rankings and drive organic traffic with comprehensive SEO strategies and technical optimizations.",
+      features: ["Technical SEO Audits", "Content Strategy & Optimization", "Local SEO Implementation", "Performance Monitoring"],
+      price: "Starting from $799",
+      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80"
     },
     {
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      icon: Settings,
       title: "Website Maintenance",
-      description: "Keep your website secure, updated, and performing at its best",
-      features: ["Security Updates", "Content Updates", "Performance Monitoring", "Backup Management"],
-      price: "Starting from $299/month"
+      description: "Keep your website secure, updated, and performing optimally with our comprehensive maintenance and support services.",
+      features: ["Security Updates & Monitoring", "Content Management", "Performance Optimization", "24/7 Technical Support"],
+      price: "Starting from $299/month",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -54,22 +62,22 @@ const Services = () => {
     {
       step: "01",
       title: "Discovery & Planning",
-      description: "We analyze your requirements and create a detailed project roadmap"
+      description: "We conduct thorough research to understand your business goals, target audience, and technical requirements to create a detailed project roadmap."
     },
     {
       step: "02",
       title: "Design & Prototyping",
-      description: "Creating wireframes and visual designs that align with your brand"
+      description: "Our design team creates wireframes, mockups, and interactive prototypes that align with your brand identity and user experience goals."
     },
     {
       step: "03",
-      title: "Development",
-      description: "Building your website using the latest technologies and best practices"
+      title: "Development & Testing",
+      description: "We build your solution using modern technologies and best practices, followed by comprehensive testing to ensure quality and performance."
     },
     {
       step: "04",
-      title: "Testing & Launch",
-      description: "Thorough testing followed by deployment and ongoing support"
+      title: "Launch & Support",
+      description: "After successful deployment, we provide ongoing support, maintenance, and optimization to ensure your continued success."
     }
   ];
 
@@ -84,7 +92,7 @@ const Services = () => {
             Our <span className="gradient-text">Services</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
-            Comprehensive web development solutions to help your business thrive in the digital world
+            Comprehensive web development solutions designed to transform your digital presence and drive business growth
           </p>
         </div>
       </section>
@@ -102,6 +110,9 @@ const Services = () => {
                       alt={service.title}
                       className="w-full h-full object-cover"
                     />
+                  </div>
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <service.icon className="h-6 w-6 text-blue-600" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-gray-900 text-center">{service.title}</CardTitle>
                 </CardHeader>
@@ -134,9 +145,9 @@ const Services = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4 animate-slide-up">Our Process</h2>
+            <h2 className="text-4xl font-bold text-white mb-4 animate-slide-up">Our Development Process</h2>
             <p className="text-xl text-blue-200 animate-fade-in">
-              A proven methodology that ensures project success
+              A proven methodology that ensures project success and client satisfaction
             </p>
           </div>
           
@@ -155,6 +166,44 @@ const Services = () => {
                 <p className="text-blue-200">{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-slide-up">Why Choose Us?</h2>
+            <p className="text-xl text-gray-600 animate-fade-in">
+              We deliver exceptional results through expertise, innovation, and dedication
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center animate-scale-in">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Code className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Expert Development Team</h3>
+              <p className="text-gray-600">Our skilled developers use the latest technologies and best practices to deliver high-quality solutions.</p>
+            </div>
+            
+            <div className="text-center animate-scale-in" style={{ animationDelay: '0.1s' }}>
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Settings className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Agile Methodology</h3>
+              <p className="text-gray-600">We follow agile development practices to ensure flexibility, transparency, and timely delivery.</p>
+            </div>
+            
+            <div className="text-center animate-scale-in" style={{ animationDelay: '0.2s' }}>
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Smartphone className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">24/7 Support</h3>
+              <p className="text-gray-600">We provide round-the-clock support to ensure your website runs smoothly and efficiently.</p>
+            </div>
           </div>
         </div>
       </section>
