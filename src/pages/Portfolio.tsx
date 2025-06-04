@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, Eye } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -20,6 +19,96 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      title: "YK Technologies",
+      description: "Technology solutions and educational platform for digital transformation",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "AWS"],
+      category: "Education",
+      liveUrl: "https://yogeshkumar6203.graphy.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 3,
+      title: "CelestLife",
+      description: "Wellness and lifestyle platform for holistic health solutions",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Express", "MySQL", "Stripe"],
+      category: "Healthcare",
+      liveUrl: "https://www.celestlife.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 4,
+      title: "The School of Bass",
+      description: "Online music education platform for bass guitar lessons in Hindi",
+      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Education",
+      liveUrl: "https://www.theschoolofbass.in/s/store/courses/description/Bass-guitar-lessons-for-beginners-in-Hindi",
+      githubUrl: "#"
+    },
+    {
+      id: 5,
+      title: "Coach Nikhil Gambhir",
+      description: "Personal coaching and fitness training platform",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
+      category: "Fitness",
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      id: 6,
+      title: "Neuron Nursing Academy",
+      description: "Comprehensive nursing education and training platform",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
+      category: "Education",
+      liveUrl: "https://www.neuronnursingacademy.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 7,
+      title: "Louise Hay",
+      description: "Educational platform for personal development and wellness",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Express", "MongoDB", "Stripe"],
+      category: "Education",
+      liveUrl: "https://www.infoworldeducation.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 8,
+      title: "Language Veda",
+      description: "Language learning platform with comprehensive courses",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Education",
+      liveUrl: "https://jayadeepamaria6883.ongraphy.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 9,
+      title: "Renu Vijay Artist (artzn colours)",
+      description: "Art gallery and online art education platform",
+      image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Art",
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      id: 10,
+      title: "Breakthrough with Karan Rawat",
+      description: "Personal development and breakthrough coaching platform",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Coaching",
+      liveUrl: "https://www.breakthroughwithkaranrawat.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 11,
       title: "E-commerce Platform",
       description: "Modern e-commerce solution with advanced filtering, payment integration, and admin dashboard",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
@@ -29,17 +118,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 3,
-      title: "Healthcare Management System",
-      description: "Comprehensive healthcare platform for patient management and appointment scheduling",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
-      category: "Healthcare",
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      id: 4,
+      id: 12,
       title: "Real Estate Platform",
       description: "Property listing platform with advanced search, virtual tours, and agent management",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
@@ -49,7 +128,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 5,
+      id: 13,
       title: "Financial Dashboard",
       description: "Interactive dashboard for financial data visualization and portfolio management",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
@@ -59,17 +138,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 6,
-      title: "Learning Management System",
-      description: "Educational platform with course management, progress tracking, and interactive content",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Angular", "NestJS", "MySQL", "AWS"],
-      category: "Education",
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      id: 7,
+      id: 14,
       title: "Social Media App",
       description: "Modern social platform with real-time messaging, media sharing, and community features",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80",
@@ -80,7 +149,7 @@ const Portfolio = () => {
     }
   ];
 
-  const categories = ["All", "Education", "E-commerce", "Healthcare", "Real Estate", "Finance", "Social Media"];
+  const categories = ["All", "Education", "E-commerce", "Healthcare", "Real Estate", "Finance", "Social Media", "Art", "Fitness", "Coaching"];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">

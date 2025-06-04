@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -8,42 +7,42 @@ import { Button } from '@/components/ui/button';
 const Services = () => {
   const services = [
     {
-      image: "/lovable-uploads/2d3c803f-0ffc-4ecc-a2f6-b03735e11ca3.png",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
       title: "Custom Web Development",
       description: "Bespoke websites built from scratch using modern frameworks like React, Vue, and Angular",
       features: ["React & Next.js", "Vue.js", "Node.js Backend", "API Integration"],
       price: "Starting from $2,999"
     },
     {
-      image: "/lovable-uploads/0a4a5326-e33b-4d21-a1bd-44417f89fd79.png",
+      image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80",
       title: "UI/UX Design",
       description: "Beautiful, intuitive designs that provide exceptional user experiences",
       features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
       price: "Starting from $1,499"
     },
     {
-      image: "/lovable-uploads/91bb677b-258d-479a-8dd7-3e5255b733e5.png",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
       title: "Responsive Design",
       description: "Mobile-first designs that work perfectly on all devices and screen sizes",
       features: ["Mobile Optimization", "Cross-browser Testing", "Performance Optimization", "PWA Development"],
       price: "Starting from $999"
     },
     {
-      image: "/lovable-uploads/02353ee8-86fa-45f3-8d05-b7137187f750.png",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
       title: "E-commerce Solutions",
       description: "Complete online stores with payment integration and inventory management",
       features: ["Shopify & WooCommerce", "Payment Gateway", "Inventory Management", "Analytics"],
       price: "Starting from $3,999"
     },
     {
-      image: "/lovable-uploads/0a4a5326-e33b-4d21-a1bd-44417f89fd79.png",
+      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80",
       title: "SEO Optimization",
       description: "Improve your search rankings and drive more organic traffic to your website",
       features: ["Technical SEO", "Content Optimization", "Performance Audit", "Local SEO"],
       price: "Starting from $799"
     },
     {
-      image: "/lovable-uploads/91bb677b-258d-479a-8dd7-3e5255b733e5.png",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
       title: "Website Maintenance",
       description: "Keep your website secure, updated, and performing at its best",
       features: ["Security Updates", "Content Updates", "Performance Monitoring", "Backup Management"],

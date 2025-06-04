@@ -1,5 +1,6 @@
 import { Users, Award, Target, Heart, Code, Palette, Zap, Globe } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
@@ -235,6 +236,8 @@ const About = () => {
           </p>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
