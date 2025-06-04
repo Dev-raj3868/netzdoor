@@ -1,4 +1,5 @@
-import { Users, Award, Target, Heart, Code, Palette, Zap, Globe } from 'lucide-react';
+
+import { Users, Award, Target, Heart, Code, Palette, Zap, Globe, Calendar, TrendingUp, Clock, Shield } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -63,6 +64,66 @@ const About = () => {
     { name: "SEO & Marketing", percentage: 78 }
   ];
 
+  const milestones = [
+    {
+      year: "2019",
+      title: "Company Founded",
+      description: "Started with a vision to transform digital experiences"
+    },
+    {
+      year: "2020",
+      title: "50+ Projects",
+      description: "Reached our first major milestone of completed projects"
+    },
+    {
+      year: "2021",
+      title: "Team Expansion",
+      description: "Grew our team to include specialized experts"
+    },
+    {
+      year: "2022",
+      title: "100+ Clients",
+      description: "Served over 100 satisfied clients globally"
+    },
+    {
+      year: "2023",
+      title: "Award Recognition",
+      description: "Received industry awards for excellence in web development"
+    },
+    {
+      year: "2024",
+      title: "500+ Projects",
+      description: "Celebrating over 500 successful project deliveries"
+    }
+  ];
+
+  const achievements = [
+    {
+      icon: <Calendar className="h-8 w-8" />,
+      title: "5+ Years",
+      subtitle: "In Business",
+      description: "Consistently delivering quality solutions since 2019"
+    },
+    {
+      icon: <TrendingUp className="h-8 w-8" />,
+      title: "98%",
+      subtitle: "Success Rate",
+      description: "Nearly perfect project completion and client satisfaction"
+    },
+    {
+      icon: <Clock className="h-8 w-8" />,
+      title: "24/7",
+      subtitle: "Support",
+      description: "Round-the-clock assistance for all our clients"
+    },
+    {
+      icon: <Shield className="h-8 w-8" />,
+      title: "100%",
+      subtitle: "Secure",
+      description: "Enterprise-grade security for all projects"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       <Navbar />
@@ -111,6 +172,65 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Story Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Story</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From humble beginnings to industry recognition, here's how we've grown
+            </p>
+          </div>
+          
+          <div className="relative">
+            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-blue-200"></div>
+            <div className="space-y-12">
+              {milestones.map((milestone, index) => (
+                <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                  <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+                    <Card className="card-3d hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm">
+                      <CardContent className="p-6">
+                        <div className="text-2xl font-bold gradient-text mb-2">{milestone.year}</div>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{milestone.title}</h3>
+                        <p className="text-gray-600">{milestone.description}</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Achievements</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Numbers that speak to our commitment and success
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {achievements.map((achievement, index) => (
+              <Card key={index} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm text-center" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardContent className="p-6">
+                  <div className="gradient-blue rounded-full w-16 h-16 flex items-center justify-center text-white mx-auto mb-4">
+                    {achievement.icon}
+                  </div>
+                  <div className="text-3xl font-bold gradient-text mb-1">{achievement.title}</div>
+                  <div className="text-lg font-semibold text-gray-900 mb-2">{achievement.subtitle}</div>
+                  <p className="text-gray-600 text-sm">{achievement.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

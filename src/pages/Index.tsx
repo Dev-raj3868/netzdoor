@@ -1,5 +1,5 @@
 
-import { ArrowRight, Code, Palette, Smartphone, Zap, Star, Users, Award } from 'lucide-react';
+import { ArrowRight, Code, Palette, Smartphone, Zap, Star, Users, Award, CheckCircle, Globe, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -35,6 +35,31 @@ const Index = () => {
     { icon: <Code className="h-6 w-6" />, value: "1000+", label: "Projects Completed" },
     { icon: <Award className="h-6 w-6" />, value: "5+", label: "Years Experience" },
     { icon: <Star className="h-6 w-6" />, value: "98%", label: "Client Satisfaction" }
+  ];
+
+  const benefits = [
+    {
+      icon: <CheckCircle className="h-6 w-6" />,
+      title: "Proven Track Record",
+      description: "Over 500 successful projects delivered across various industries"
+    },
+    {
+      icon: <Globe className="h-6 w-6" />,
+      title: "Global Reach",
+      description: "Serving clients worldwide with 24/7 support and communication"
+    },
+    {
+      icon: <Shield className="h-6 w-6" />,
+      title: "Secure & Reliable",
+      description: "Enterprise-grade security and 99.9% uptime guarantee"
+    }
+  ];
+
+  const industries = [
+    { name: "Education", count: "40%" },
+    { name: "Healthcare", count: "25%" },
+    { name: "E-commerce", count: "20%" },
+    { name: "Technology", count: "15%" }
   ];
 
   return (
@@ -122,6 +147,90 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Businesses Trust Us</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our commitment to excellence and innovation sets us apart in the industry
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {benefits.map((benefit, index) => (
+              <Card key={index} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="gradient-blue rounded-full w-12 h-12 flex items-center justify-center text-white mr-4">
+                      {benefit.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">{benefit.title}</h3>
+                  </div>
+                  <p className="text-gray-600">{benefit.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industries Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-slide-in-left">
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Industries We Serve</h2>
+              <p className="text-xl text-gray-600 mb-8">
+                From startups to enterprises, we've helped businesses across various industries 
+                achieve their digital transformation goals.
+              </p>
+              <div className="space-y-4">
+                {industries.map((industry, index) => (
+                  <div key={index} className="flex items-center justify-between">
+                    <span className="text-lg font-medium text-gray-900">{industry.name}</span>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-24 bg-gray-200 rounded-full h-2">
+                        <div 
+                          className="gradient-blue h-2 rounded-full transition-all duration-1000"
+                          style={{ width: industry.count }}
+                        ></div>
+                      </div>
+                      <span className="text-sm text-gray-600 w-10">{industry.count}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="animate-slide-in-right">
+              <div className="grid grid-cols-2 gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80" 
+                  alt="Education Industry"
+                  className="rounded-lg shadow-lg card-3d"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=400&q=80" 
+                  alt="Healthcare Industry"
+                  className="rounded-lg shadow-lg card-3d mt-8"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=400&q=80" 
+                  alt="E-commerce Industry"
+                  className="rounded-lg shadow-lg card-3d"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" 
+                  alt="Technology Industry"
+                  className="rounded-lg shadow-lg card-3d mt-8"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
