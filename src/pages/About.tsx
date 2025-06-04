@@ -1,4 +1,3 @@
-
 import { Users, Award, Target, Heart, Code, Palette, Zap, Globe } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import { Card, CardContent } from '@/components/ui/card';
@@ -6,28 +5,28 @@ import { Card, CardContent } from '@/components/ui/card';
 const About = () => {
   const team = [
     {
-      name: "Sarah Johnson",
-      role: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=400&q=80",
-      bio: "10+ years in web development with expertise in React and Node.js"
+      name: "Alex Johnson",
+      role: "Lead Developer",
+      image: "/lovable-uploads/d770ee38-0f3f-469e-89cb-84d2a82bed8e.png",
+      bio: "Expert in React, Node.js, and modern web technologies"
     },
     {
       name: "Michael Chen",
-      role: "Lead Developer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
-      bio: "Full-stack developer specializing in modern JavaScript frameworks"
+      role: "Business Analyst",
+      image: "/lovable-uploads/da92dc77-f35e-4e84-b141-0a14b78b7658.png",
+      bio: "Data-driven insights and strategic planning specialist"
     },
     {
-      name: "Emily Rodriguez",
+      name: "Sarah Wilson",
       role: "UI/UX Designer",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
+      image: "/lovable-uploads/90aaf4cb-d550-4baa-9e9c-fd480a1b0724.png",
       bio: "Creative designer focused on user-centered design and accessibility"
     },
     {
-      name: "David Kim",
-      role: "DevOps Engineer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-      bio: "Infrastructure expert ensuring scalable and secure deployments"
+      name: "David Rodriguez",
+      role: "Senior Consultant",
+      image: "/lovable-uploads/f941d4af-0c75-489c-997f-5bd80a9c9097.png",
+      bio: "Strategic advisor with 15+ years of industry experience"
     }
   ];
 

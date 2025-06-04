@@ -37,33 +37,6 @@ const Index = () => {
     { icon: <Star className="h-6 w-6" />, value: "98%", label: "Client Satisfaction" }
   ];
 
-  const teamMembers = [
-    {
-      name: "Alex Johnson",
-      position: "Lead Developer",
-      image: "/lovable-uploads/a61393f1-1f5e-4249-adb4-ecc20695d83e.png",
-      description: "Expert in React, Node.js, and modern web technologies"
-    },
-    {
-      name: "Sarah Wilson",
-      position: "UI/UX Designer",
-      image: "/lovable-uploads/f390498b-b6fc-41ee-aeab-e27ab2a614ab.png",
-      description: "Creating beautiful and intuitive user experiences"
-    },
-    {
-      name: "Michael Chen",
-      position: "Senior Developer",
-      image: "/lovable-uploads/3ed7aef5-8836-4f4e-b9d4-f523d10cc1a3.png",
-      description: "Full-stack developer with 8+ years of experience"
-    },
-    {
-      name: "David Rodriguez",
-      position: "Project Manager",
-      image: "/lovable-uploads/0ed33ee0-f7fe-45e5-a489-a216f2be4a7a.png",
-      description: "Ensuring projects are delivered on time and within budget"
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       <Navbar />
@@ -146,37 +119,6 @@ const Index = () => {
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Meet Our Team Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our talented team of developers, designers, and project managers are dedicated to bringing your vision to life
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm text-center" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardContent className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 hover:scale-110 transition-transform duration-200">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-2">{member.position}</p>
-                  <p className="text-gray-600 text-sm">{member.description}</p>
                 </CardContent>
               </Card>
             ))}

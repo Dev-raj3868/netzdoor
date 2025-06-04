@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github, Eye } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -9,6 +10,16 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      title: "Codingrad",
+      description: "Comprehensive coding education platform with interactive courses, live sessions, and progress tracking",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Education",
+      liveUrl: "https://codingradweb.graphy.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 2,
       title: "E-commerce Platform",
       description: "Modern e-commerce solution with advanced filtering, payment integration, and admin dashboard",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
@@ -18,7 +29,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 2,
+      id: 3,
       title: "Healthcare Management System",
       description: "Comprehensive healthcare platform for patient management and appointment scheduling",
       image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80",
@@ -28,7 +39,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 3,
+      id: 4,
       title: "Real Estate Platform",
       description: "Property listing platform with advanced search, virtual tours, and agent management",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
@@ -38,7 +49,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 4,
+      id: 5,
       title: "Financial Dashboard",
       description: "Interactive dashboard for financial data visualization and portfolio management",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
@@ -48,7 +59,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 5,
+      id: 6,
       title: "Learning Management System",
       description: "Educational platform with course management, progress tracking, and interactive content",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
@@ -58,7 +69,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 6,
+      id: 7,
       title: "Social Media App",
       description: "Modern social platform with real-time messaging, media sharing, and community features",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80",
@@ -69,7 +80,7 @@ const Portfolio = () => {
     }
   ];
 
-  const categories = ["All", "E-commerce", "Healthcare", "Real Estate", "Finance", "Education", "Social Media"];
+  const categories = ["All", "Education", "E-commerce", "Healthcare", "Real Estate", "Finance", "Social Media"];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
@@ -149,7 +160,11 @@ const Portfolio = () => {
                     ))}
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" className="flex-1 gradient-blue text-white hover:scale-105 transition-transform duration-200">
+                    <Button 
+                      size="sm" 
+                      className="flex-1 gradient-blue text-white hover:scale-105 transition-transform duration-200"
+                      onClick={() => window.open(project.liveUrl, '_blank')}
+                    >
                       <ExternalLink className="h-4 w-4 mr-1" />
                       Live Demo
                     </Button>
