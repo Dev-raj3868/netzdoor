@@ -1,7 +1,7 @@
-
 import { ArrowRight, Code, Palette, Smartphone, Zap, Star, Users, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -152,6 +152,8 @@ const Index = () => {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

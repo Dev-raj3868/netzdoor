@@ -1,6 +1,6 @@
-
 import { Code, Palette, Smartphone, Search, ShoppingCart, Zap, Globe, Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -170,6 +170,8 @@ const Services = () => {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
