@@ -1,3 +1,4 @@
+
 import { ArrowRight, Code, Palette, Smartphone, Zap, Star, Users, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -71,21 +72,26 @@ const Index = () => {
             <div className="animate-slide-in-right">
               <div className="relative">
                 <div className="absolute inset-0 gradient-blue rounded-3xl transform rotate-6 animate-pulse-slow"></div>
-                <div className="relative bg-white rounded-3xl p-8 box-shadow-3d card-3d">
-                  <div className="grid grid-cols-3 gap-4 mb-6">
-                    <div className="h-4 bg-gradient-to-r from-blue-400 to-blue-600 rounded animate-pulse"></div>
-                    <div className="h-4 bg-gradient-to-r from-indigo-400 to-indigo-600 rounded animate-pulse delay-75"></div>
-                    <div className="h-4 bg-gradient-to-r from-purple-400 to-purple-600 rounded animate-pulse delay-150"></div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="h-6 bg-gray-200 rounded animate-pulse"></div>
-                    <div className="h-6 bg-gray-200 rounded w-3/4 animate-pulse delay-75"></div>
-                    <div className="h-6 bg-gray-200 rounded w-1/2 animate-pulse delay-150"></div>
-                  </div>
-                  <div className="mt-6 flex justify-between">
-                    <div className="h-8 w-8 bg-blue-500 rounded-full animate-float"></div>
-                    <div className="h-8 w-8 bg-indigo-500 rounded-full animate-float delay-1000"></div>
-                    <div className="h-8 w-8 bg-purple-500 rounded-full animate-float delay-2000"></div>
+                <div className="relative bg-white rounded-3xl overflow-hidden box-shadow-3d card-3d">
+                  <img 
+                    src="/lovable-uploads/2d3c803f-0ffc-4ecc-a2f6-b03735e11ca3.png" 
+                    alt="Professional web development team member working on laptop"
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent"></div>
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
+                      <div className="flex items-center space-x-2 mb-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span className="text-sm font-medium text-gray-700">Live Development</span>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="h-2 bg-blue-200 rounded-full overflow-hidden">
+                          <div className="h-full bg-blue-600 rounded-full animate-pulse" style={{ width: '75%' }}></div>
+                        </div>
+                        <p className="text-xs text-gray-600">Building your next amazing project...</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

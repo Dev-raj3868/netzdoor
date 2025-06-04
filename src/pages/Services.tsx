@@ -1,49 +1,49 @@
-import { Code, Palette, Smartphone, Search, ShoppingCart, Zap, Globe, Users } from 'lucide-react';
+
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
     {
-      icon: <Code className="h-12 w-12" />,
+      image: "/lovable-uploads/2d3c803f-0ffc-4ecc-a2f6-b03735e11ca3.png",
       title: "Custom Web Development",
       description: "Bespoke websites built from scratch using modern frameworks like React, Vue, and Angular",
       features: ["React & Next.js", "Vue.js", "Node.js Backend", "API Integration"],
       price: "Starting from $2,999"
     },
     {
-      icon: <Palette className="h-12 w-12" />,
+      image: "/lovable-uploads/0a4a5326-e33b-4d21-a1bd-44417f89fd79.png",
       title: "UI/UX Design",
       description: "Beautiful, intuitive designs that provide exceptional user experiences",
       features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
       price: "Starting from $1,499"
     },
     {
-      icon: <Smartphone className="h-12 w-12" />,
+      image: "/lovable-uploads/91bb677b-258d-479a-8dd7-3e5255b733e5.png",
       title: "Responsive Design",
       description: "Mobile-first designs that work perfectly on all devices and screen sizes",
       features: ["Mobile Optimization", "Cross-browser Testing", "Performance Optimization", "PWA Development"],
       price: "Starting from $999"
     },
     {
-      icon: <ShoppingCart className="h-12 w-12" />,
+      image: "/lovable-uploads/02353ee8-86fa-45f3-8d05-b7137187f750.png",
       title: "E-commerce Solutions",
       description: "Complete online stores with payment integration and inventory management",
       features: ["Shopify & WooCommerce", "Payment Gateway", "Inventory Management", "Analytics"],
       price: "Starting from $3,999"
     },
     {
-      icon: <Search className="h-12 w-12" />,
+      image: "/lovable-uploads/0a4a5326-e33b-4d21-a1bd-44417f89fd79.png",
       title: "SEO Optimization",
       description: "Improve your search rankings and drive more organic traffic to your website",
       features: ["Technical SEO", "Content Optimization", "Performance Audit", "Local SEO"],
       price: "Starting from $799"
     },
     {
-      icon: <Zap className="h-12 w-12" />,
+      image: "/lovable-uploads/91bb677b-258d-479a-8dd7-3e5255b733e5.png",
       title: "Website Maintenance",
       description: "Keep your website secure, updated, and performing at its best",
       features: ["Security Updates", "Content Updates", "Performance Monitoring", "Backup Management"],
@@ -97,10 +97,14 @@ const Services = () => {
             {services.map((service, index) => (
               <Card key={index} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm overflow-hidden group" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader className="pb-4">
-                  <div className="gradient-blue rounded-full w-20 h-20 flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-200">
-                    {service.icon}
+                  <div className="w-20 h-20 rounded-full overflow-hidden mb-4 group-hover:scale-110 transition-transform duration-200 mx-auto">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <CardTitle className="text-2xl font-bold text-gray-900">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl font-bold text-gray-900 text-center">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-600">{service.description}</p>

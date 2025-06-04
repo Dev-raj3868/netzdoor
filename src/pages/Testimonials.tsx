@@ -17,42 +17,42 @@ const Testimonials = () => {
     {
       name: "Sarah Johnson",
       position: "CEO, TechStart Inc.",
-      image: "/lovable-uploads/ecf1004b-0627-43cd-8b4b-b772e8ae8f3c.png",
+      image: "/lovable-uploads/0a4a5326-e33b-4d21-a1bd-44417f89fd79.png",
       rating: 5,
       text: "Netzdoor transformed our online presence completely. Their attention to detail and modern design approach exceeded our expectations."
     },
     {
       name: "Michael Chen",
       position: "Founder, Digital Solutions",
-      image: "/lovable-uploads/3bd1d942-dbc1-4757-88d8-650eaa82a6ca.png",
+      image: "/lovable-uploads/91bb677b-258d-479a-8dd7-3e5255b733e5.png",
       rating: 5,
       text: "The team at Netzdoor delivered our e-commerce platform on time and within budget. The results speak for themselves - 300% increase in sales!"
     },
     {
       name: "Emily Rodriguez",
       position: "Marketing Director, Creative Hub",
-      image: "/lovable-uploads/bace715e-5a9b-4cb6-8ff1-4eb6758f15c8.png",
+      image: "/lovable-uploads/0a4a5326-e33b-4d21-a1bd-44417f89fd79.png",
       rating: 5,
       text: "Working with Netzdoor was a game-changer for our business. They understood our vision and brought it to life beautifully."
     },
     {
       name: "David Thompson",
       position: "Owner, Local Bistro",
-      image: "/lovable-uploads/c995e9ea-a2f3-4245-88ac-7b83f21f8f5c.png",
+      image: "/lovable-uploads/02353ee8-86fa-45f3-8d05-b7137187f750.png",
       rating: 5,
       text: "Our restaurant's website now perfectly reflects our brand. The online reservation system has streamlined our operations significantly."
     },
     {
       name: "Lisa Park",
       position: "Director, Health & Wellness",
-      image: "/lovable-uploads/7d9a04c4-e43d-47a5-8208-360cb57f256d.png",
+      image: "/lovable-uploads/0a4a5326-e33b-4d21-a1bd-44417f89fd79.png",
       rating: 5,
       text: "The responsive design works flawlessly across all devices. Our clients love the new patient portal and booking system."
     },
     {
       name: "James Wilson",
       position: "CTO, Innovation Labs",
-      image: "/lovable-uploads/0b1b866b-35d8-40cb-89f6-74659eb03ce3.png",
+      image: "/lovable-uploads/2d3c803f-0ffc-4ecc-a2f6-b03735e11ca3.png",
       rating: 5,
       text: "Netzdoor's technical expertise is outstanding. They integrated complex APIs seamlessly and delivered a robust platform."
     }
@@ -102,38 +102,40 @@ const Testimonials = () => {
             </p>
           </div>
           
-          <Carousel className="w-full animate-scale-in">
-            <CarouselContent>
-              {videoTestimonials.map((video, index) => (
-                <CarouselItem key={index}>
-                  <div className="p-1">
-                    <Card className="border-0 bg-white/80 backdrop-blur-sm">
-                      <CardContent className="p-6">
-                        <div className="relative rounded-3xl overflow-hidden card-3d mb-4">
-                          <div className="aspect-video">
-                            <iframe
-                              className="w-full h-full"
-                              src={`https://www.youtube.com/embed/${video.id}`}
-                              title={video.title}
-                              frameBorder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                            ></iframe>
+          <div className="relative">
+            <Carousel className="w-full animate-scale-in" opts={{ align: "start", loop: true }}>
+              <CarouselContent>
+                {videoTestimonials.map((video, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-1">
+                      <Card className="border-0 bg-white/80 backdrop-blur-sm">
+                        <CardContent className="p-6">
+                          <div className="relative rounded-3xl overflow-hidden card-3d mb-4">
+                            <div className="aspect-video">
+                              <iframe
+                                className="w-full h-full"
+                                src={`https://www.youtube.com/embed/${video.id}`}
+                                title={video.title}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              ></iframe>
+                            </div>
                           </div>
-                        </div>
-                        <div className="text-center">
-                          <h3 className="text-xl font-semibold text-gray-900 mb-2">{video.title}</h3>
-                          <p className="text-gray-600">{video.client}</p>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+                          <div className="text-center">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-2">{video.title}</h3>
+                            <p className="text-gray-600">{video.client}</p>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="absolute -left-12 top-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700" />
+              <CarouselNext className="absolute -right-12 top-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700" />
+            </Carousel>
+          </div>
         </div>
       </section>
 
