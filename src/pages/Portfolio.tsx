@@ -261,7 +261,7 @@ const Portfolio = () => {
             Our <span className="gradient-text">Portfolio</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
-            Explore our latest projects and see how we've helped businesses achieve their digital goals
+            Explore our collection of 24+ successful projects and see how we've helped businesses achieve their digital goals
           </p>
         </div>
       </section>
@@ -269,41 +269,43 @@ const Portfolio = () => {
       {/* Portfolio Grid */}
       <section className="py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {projects.map((project, index) => (
-              <Card key={project.id} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm overflow-hidden group" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="relative overflow-hidden h-64">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <Badge className="absolute top-4 right-4 gradient-blue text-white">
-                    {project.category}
-                  </Badge>
+              <Card key={project.id} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm overflow-hidden group" style={{ animationDelay: `${index * 0.05}s` }}>
+                <div className="relative overflow-hidden">
+                  <div className="w-full h-48 bg-gray-100">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500 p-2"
+                    />
+                  </div>
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
+                <CardContent className="p-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, idx) => (
+                  <p className="text-gray-600 mb-3 text-sm line-clamp-2">{project.description}</p>
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    {project.technologies.slice(0, 3).map((tech, idx) => (
                       <Badge key={idx} variant="secondary" className="text-xs">
                         {tech}
                       </Badge>
                     ))}
+                    {project.technologies.length > 3 && (
+                      <Badge variant="secondary" className="text-xs">
+                        +{project.technologies.length - 3}
+                      </Badge>
+                    )}
                   </div>
-                  <div className="flex gap-2">
-                    <Button 
-                      size="sm" 
-                      className="flex-1 gradient-blue text-white hover:scale-105 transition-transform duration-200"
-                      onClick={() => window.open(project.liveUrl, '_blank')}
-                    >
-                      <ExternalLink className="h-4 w-4 mr-1" />
-                      Live Demo
-                    </Button>
-                  </div>
+                  <Button 
+                    size="sm" 
+                    className="w-full gradient-blue text-white hover:scale-105 transition-transform duration-200"
+                    onClick={() => window.open(project.liveUrl, '_blank')}
+                  >
+                    <ExternalLink className="h-4 w-4 mr-1" />
+                    Live Demo
+                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -316,7 +318,7 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="animate-slide-up">
-              <div className="text-4xl font-bold text-white mb-2">50+</div>
+              <div className="text-4xl font-bold text-white mb-2">24+</div>
               <div className="text-blue-200">Projects Completed</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>

@@ -1,5 +1,6 @@
+
 import { Link } from 'react-router-dom';
-import { Code, Palette, Smartphone, ShoppingCart, Search, Settings } from 'lucide-react';
+import { Code, Smartphone, Search, ArrowRight, Check, Sparkles } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -10,134 +11,124 @@ const Services = () => {
     {
       icon: Code,
       title: "Web Development Services",
-      description: "Build scalable, high-performance web applications tailored to your business needs using cutting-edge technologies and best practices.",
-      features: ["React & Next.js Development", "Full-Stack Solutions", "API Development & Integration", "Database Design & Optimization"],
+      subtitle: "Build Future-Ready Websites",
+      description: "Transform your digital presence with cutting-edge web applications built using the latest technologies and best practices.",
+      features: [
+        "React & Next.js Development",
+        "Full-Stack Solutions",
+        "API Development & Integration",
+        "Database Design & Optimization",
+        "Performance Optimization",
+        "SEO-Friendly Development"
+      ],
       price: "Starting from $2,999",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+      gradient: "from-blue-500 to-cyan-500",
+      bgGradient: "from-blue-50 to-cyan-50"
     },
     {
       icon: Smartphone,
-      title: "App Development Services",
-      description: "Create powerful mobile applications for iOS and Android platforms with seamless user experiences and robust functionality.",
-      features: ["Cross-Platform Development", "Native App Development", "App Store Optimization", "Backend Integration"],
+      title: "App Development Services", 
+      subtitle: "Mobile-First Solutions",
+      description: "Create powerful mobile applications that deliver exceptional user experiences across iOS and Android platforms.",
+      features: [
+        "Cross-Platform Development",
+        "Native App Development", 
+        "App Store Optimization",
+        "Backend Integration",
+        "Real-time Features",
+        "Push Notifications"
+      ],
       price: "Starting from $4,999",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      icon: Palette,
-      title: "UI/UX Design",
-      description: "Create stunning, user-centered designs that drive engagement and conversions through intuitive interfaces and exceptional user experiences.",
-      features: ["User Research & Analysis", "Wireframing & Prototyping", "Visual Design Systems", "Usability Testing"],
-      price: "Starting from $1,499",
-      image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80"
+      gradient: "from-purple-500 to-pink-500",
+      bgGradient: "from-purple-50 to-pink-50"
     },
     {
       icon: Search,
       title: "Digital Marketing Services",
-      description: "Boost your online presence and drive targeted traffic with comprehensive digital marketing strategies and campaigns.",
-      features: ["Social Media Marketing", "Content Marketing", "PPC Advertising", "Email Marketing Campaigns"],
+      subtitle: "Grow Your Online Presence",
+      description: "Boost your brand visibility and drive targeted traffic with comprehensive digital marketing strategies and campaigns.",
+      features: [
+        "Social Media Marketing",
+        "Content Marketing Strategy",
+        "PPC Advertising Campaigns",
+        "Email Marketing Automation",
+        "SEO & Local SEO",
+        "Analytics & Reporting"
+      ],
       price: "Starting from $1,299",
-      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      icon: Search,
-      title: "SEO Services",
-      description: "Improve your search engine rankings and drive organic traffic with comprehensive SEO strategies and technical optimizations.",
-      features: ["Technical SEO Audits", "Content Strategy & Optimization", "Local SEO Implementation", "Performance Monitoring"],
-      price: "Starting from $799",
-      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      icon: ShoppingCart,
-      title: "E-commerce Solutions",
-      description: "Build powerful online stores with secure payment processing, inventory management, and analytics to boost your sales.",
-      features: ["Custom E-commerce Platforms", "Payment Gateway Integration", "Inventory Management Systems", "Sales Analytics & Reporting"],
-      price: "Starting from $3,999",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      icon: Settings,
-      title: "Website Maintenance",
-      description: "Keep your website secure, updated, and performing optimally with our comprehensive maintenance and support services.",
-      features: ["Security Updates & Monitoring", "Content Management", "Performance Optimization", "24/7 Technical Support"],
-      price: "Starting from $299/month",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+      gradient: "from-green-500 to-emerald-500",
+      bgGradient: "from-green-50 to-emerald-50"
     }
   ];
 
-  const process = [
-    {
-      step: "01",
-      title: "Discovery & Planning",
-      description: "We conduct thorough research to understand your business goals, target audience, and technical requirements to create a detailed project roadmap."
-    },
-    {
-      step: "02",
-      title: "Design & Prototyping",
-      description: "Our design team creates wireframes, mockups, and interactive prototypes that align with your brand identity and user experience goals."
-    },
-    {
-      step: "03",
-      title: "Development & Testing",
-      description: "We build your solution using modern technologies and best practices, followed by comprehensive testing to ensure quality and performance."
-    },
-    {
-      step: "04",
-      title: "Launch & Support",
-      description: "After successful deployment, we provide ongoing support, maintenance, and optimization to ensure your continued success."
-    }
+  const stats = [
+    { number: "150+", label: "Projects Completed", icon: "🚀" },
+    { number: "98%", label: "Client Satisfaction", icon: "⭐" },
+    { number: "24/7", label: "Support Available", icon: "🔧" },
+    { number: "50+", label: "Happy Clients", icon: "😊" }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 animate-slide-up">
-            Our <span className="gradient-text">Services</span>
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5"></div>
+        <div className="max-w-7xl mx-auto text-center relative">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-bounce">
+            <Sparkles className="h-4 w-4" />
+            Premium Digital Solutions
+          </div>
+          <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 mb-6 animate-slide-up">
+            Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Services</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
-            Comprehensive web development solutions designed to transform your digital presence and drive business growth
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in leading-relaxed">
+            Transform your business with our comprehensive digital solutions designed to drive growth and success
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm overflow-hidden group" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardHeader className="pb-4">
-                  <div className="w-20 h-20 rounded-full overflow-hidden mb-4 group-hover:scale-110 transition-transform duration-200 mx-auto">
-                    <img 
-                      src={service.image} 
-                      alt={service.title}
-                      className="w-full h-full object-cover"
-                    />
+              <Card key={index} className={`relative overflow-hidden border-0 bg-gradient-to-br ${service.bgGradient} hover:shadow-2xl transition-all duration-500 group animate-scale-in`} style={{ animationDelay: `${index * 0.2}s` }}>
+                <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                
+                <CardHeader className="pb-6 relative">
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon className="h-8 w-8 text-white" />
                   </div>
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <service.icon className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <CardTitle className="text-2xl font-bold text-gray-900 text-center">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl font-bold text-gray-900 mb-2">{service.title}</CardTitle>
+                  <p className={`text-lg font-semibold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}>
+                    {service.subtitle}
+                  </p>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-gray-600">{service.description}</p>
-                  <div className="space-y-2">
+                
+                <CardContent className="space-y-6 relative">
+                  <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                  
+                  <div className="space-y-3">
                     {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center text-sm text-gray-500">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                        {feature}
+                      <div key={idx} className="flex items-center gap-3 text-gray-700">
+                        <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${service.gradient} flex items-center justify-center flex-shrink-0`}>
+                          <Check className="h-3 w-3 text-white" />
+                        </div>
+                        <span className="text-sm font-medium">{feature}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="pt-4 border-t border-gray-200">
-                    <div className="text-2xl font-bold gradient-text mb-4">{service.price}</div>
+                  
+                  <div className="pt-6 border-t border-gray-200">
+                    <div className={`text-3xl font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-6`}>
+                      {service.price}
+                    </div>
                     <Link to="/contact">
-                      <Button className="w-full gradient-blue text-white hover:scale-105 transition-transform duration-200">
-                        Get Quote
+                      <Button className={`w-full bg-gradient-to-r ${service.gradient} text-white hover:scale-105 transition-all duration-300 group-hover:shadow-lg h-12 text-lg font-semibold`}>
+                        Get Started
+                        <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                       </Button>
                     </Link>
                   </div>
@@ -148,83 +139,44 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-indigo-600">
-        <div className="max-w-7xl mx-auto">
+      {/* Stats Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-900 to-gray-800 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+        <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4 animate-slide-up">Our Development Process</h2>
-            <p className="text-xl text-blue-200 animate-fade-in">
-              A proven methodology that ensures project success and client satisfaction
+            <h2 className="text-4xl font-bold text-white mb-4 animate-slide-up">Why Choose Us?</h2>
+            <p className="text-xl text-gray-300 animate-fade-in">
+              Trusted by businesses worldwide for exceptional results
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {process.map((item, index) => (
-              <div key={index} className="text-center animate-slide-up" style={{ animationDelay: `${index * 0.2}s` }}>
-                <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                    <span className="text-2xl font-bold text-white">{item.step}</span>
-                  </div>
-                  {index < process.length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-1/2 w-full h-0.5 bg-white/30"></div>
-                  )}
+          <div className="grid md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center animate-slide-up group" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {stat.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-blue-200">{item.description}</p>
+                <div className="text-4xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
+                  {stat.number}
+                </div>
+                <div className="text-gray-300 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-slide-up">Why Choose Us?</h2>
-            <p className="text-xl text-gray-600 animate-fade-in">
-              We deliver exceptional results through expertise, innovation, and dedication
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center animate-scale-in">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Code className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Expert Development Team</h3>
-              <p className="text-gray-600">Our skilled developers use the latest technologies and best practices to deliver high-quality solutions.</p>
-            </div>
-            
-            <div className="text-center animate-scale-in" style={{ animationDelay: '0.1s' }}>
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Settings className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Agile Methodology</h3>
-              <p className="text-gray-600">We follow agile development practices to ensure flexibility, transparency, and timely delivery.</p>
-            </div>
-            
-            <div className="text-center animate-scale-in" style={{ animationDelay: '0.2s' }}>
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Smartphone className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">24/7 Support</h3>
-              <p className="text-gray-600">We provide round-the-clock support to ensure your website runs smoothly and efficiently.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Start Your Project?</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Let's discuss your requirements and create something amazing together
+          <h2 className="text-5xl font-bold text-gray-900 mb-6">Ready to Transform Your Business?</h2>
+          <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+            Let's collaborate to bring your vision to life with cutting-edge technology and innovative solutions
           </p>
           <Link to="/contact">
-            <Button className="gradient-blue text-white px-12 py-4 text-lg font-semibold rounded-full hover:scale-105 transition-transform duration-200 box-shadow-3d">
-              Get Free Consultation
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-6 text-xl font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
+              Start Your Project Today
+              <ArrowRight className="h-6 w-6 ml-3" />
             </Button>
           </Link>
         </div>
