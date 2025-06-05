@@ -69,6 +69,106 @@ const Portfolio = () => {
     },
     {
       id: 7,
+      title: "Aneri Patel - Fashion Designer & Consultant",
+      description: "Fashion Designer | Stylist | Faculty | Merchandiser | Consultant providing professional guidance and mentoring in the fashion industry.",
+      image: "/lovable-uploads/d832a1c0-38e3-4aab-bfab-e3ac3cc0a0b5.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Fashion",
+      liveUrl: "https://mentoringbyaneri.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 8,
+      title: "Credentax - Financial Consulting & GST Firm",
+      description: "Financial Accounting and Tax Consultancy Firm providing comprehensive accounting, taxation, and business consulting services.",
+      image: "/lovable-uploads/44bfab06-f33f-41dc-9cf2-9f3fe90edd75.png",
+      technologies: ["React", "Node.js", "MySQL", "Stripe"],
+      category: "Finance",
+      liveUrl: "https://www.akashnayar.in/credentax/index.php",
+      githubUrl: "#"
+    },
+    {
+      id: 9,
+      title: "Guinet Technologies",
+      description: "Learn NextGen Technologies with GuiNet. Advanced technology education platform providing cutting-edge courses and career counseling.",
+      image: "/lovable-uploads/156f0613-d4d4-475c-aafe-f689775c8b30.png",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Education",
+      liveUrl: "https://guinett.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 10,
+      title: "SSEI Markets - Building Atmanirbhar Traders",
+      description: "Building Atmanirbhar Traders through comprehensive trading education and mentorship programs for aspiring traders.",
+      image: "/lovable-uploads/36201ccb-a8ca-4084-ab4f-522c9ee10987.png",
+      technologies: ["React", "Node.js", "MongoDB", "Chart.js"],
+      category: "Finance",
+      liveUrl: "https://www.sseimarkets.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 11,
+      title: "Midhafin - Career in Finance Mentorship",
+      description: "Boost your career in Finance with mentorship you can bank on! Personalized learning and expertise for finance professionals.",
+      image: "/lovable-uploads/e34229a1-3253-412f-887f-091331ff3ed6.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Finance",
+      liveUrl: "https://www.midhafin.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 12,
+      title: "ONVID - eLearning Platform",
+      description: "ONVID Solutions Pvt. Ltd. is an eLearning platform providing comprehensive online courses and training programs.",
+      image: "/lovable-uploads/a67e83a0-7071-42cb-8818-7ba59d9724f9.png",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Education",
+      liveUrl: "https://www.onvid.in/",
+      githubUrl: "#"
+    },
+    {
+      id: 13,
+      title: "Hitesh Nanwani - eLearning Platform",
+      description: "Hitesh Nanwani Solutions Pvt. Ltd. is an eLearning platform offering price actions and options trading courses.",
+      image: "/lovable-uploads/a914d733-abbc-4bd0-99fc-c751c724e1e8.png",
+      technologies: ["React", "Node.js", "MongoDB", "TradingView"],
+      category: "Education",
+      liveUrl: "https://www.hiteshnanwani.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 14,
+      title: "Sarbart - Art Classes",
+      description: "Sarb Art Classes providing comprehensive art education and creative learning experiences for students of all ages.",
+      image: "/lovable-uploads/dde3f744-05e3-45ab-991c-cbb125224aca.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Art",
+      liveUrl: "https://www.sarbart.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 15,
+      title: "iGrow Traders - Trading Education",
+      description: "Accelerate your profit system with comprehensive trading education and mentorship programs for traders.",
+      image: "/lovable-uploads/115ee859-7c83-4e95-a0d6-f91761c51a31.png",
+      technologies: ["React", "Node.js", "MongoDB", "Chart.js"],
+      category: "Finance",
+      liveUrl: "https://www.igrowtraders.co.in/",
+      githubUrl: "#"
+    },
+    {
+      id: 16,
+      title: "Zorba The Zen - EdTech Platform",
+      description: "Money-oriented and creative skills EdTech platform offering highly lucrative and creative skills training programs.",
+      image: "/lovable-uploads/f56f8629-0b28-4b89-9447-771ee555d0fc.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Education",
+      liveUrl: "https://puneetjindal6794.ongraphy.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 17,
       title: "Codingrad",
       description: "Comprehensive coding education platform with interactive courses, live sessions, and progress tracking",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
@@ -78,7 +178,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 8,
+      id: 18,
       title: "YK Technologies",
       description: "Technology solutions and educational platform for digital transformation",
       image: "/lovable-uploads/6a936aae-041d-40c9-9a67-841370823be0.png",
@@ -88,7 +188,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 9,
+      id: 19,
       title: "CelestLife",
       description: "Wellness and lifestyle platform for holistic health solutions",
       image: "/lovable-uploads/bfb63eeb-9369-4fbd-a5c7-219a75316bbf.png",
@@ -98,7 +198,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 10,
+      id: 20,
       title: "The School of Bass",
       description: "Online music education platform for bass guitar lessons in Hindi",
       image: "/lovable-uploads/e61abd28-188b-4a2d-bce8-e4f80ee951dd.png",
@@ -108,7 +208,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 11,
+      id: 21,
       title: "Coach Nikhil Gambhir",
       description: "Personal coaching and fitness training platform",
       image: "/lovable-uploads/10bc9519-a43c-4267-ac98-5db1743788bf.png",
@@ -118,7 +218,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 12,
+      id: 22,
       title: "Neuron Nursing Academy",
       description: "Comprehensive nursing education and training platform",
       image: "/lovable-uploads/a6d7c263-d2a8-46e6-99a0-98fe2d5bb090.png",
@@ -128,7 +228,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 13,
+      id: 23,
       title: "Louise Hay",
       description: "Educational platform for personal development and wellness",
       image: "/lovable-uploads/adb10630-f885-457d-977a-254c3360b614.png",
@@ -138,7 +238,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 14,
+      id: 24,
       title: "Language Veda",
       description: "Language learning platform with comprehensive courses",
       image: "/lovable-uploads/2339b1f5-54aa-47dc-9967-2c4055ced91d.png",
@@ -148,7 +248,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 15,
+      id: 25,
       title: "Renu Vijay Artist (artzn colours)",
       description: "Art gallery and online art education platform",
       image: "/lovable-uploads/e4ff6cdf-1641-4b1a-ba7f-8a7c84bcab41.png",
@@ -158,7 +258,7 @@ const Portfolio = () => {
       githubUrl: "#"
     },
     {
-      id: 16,
+      id: 26,
       title: "Breakthrough with Karan Rawat",
       description: "Personal development and breakthrough coaching platform",
       image: "/lovable-uploads/f6e4b7ad-d9b2-4af2-a422-39185e60c5ca.png",
@@ -169,7 +269,7 @@ const Portfolio = () => {
     }
   ];
 
-  const categories = ["All", "Education", "Legal", "Finance", "Entertainment", "Healthcare", "Art", "Fitness", "Coaching"];
+  const categories = ["All", "Education", "Legal", "Finance", "Entertainment", "Healthcare", "Art", "Fitness", "Coaching", "Fashion"];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
