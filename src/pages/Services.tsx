@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Code, Smartphone, Search, ArrowRight, Check, Sparkles, Target, Users, Clock, Heart } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -21,7 +20,6 @@ const Services = () => {
         "Performance Optimization",
         "SEO-Friendly Development"
       ],
-      price: "Starting from $2,999",
       gradient: "from-blue-500 to-cyan-500",
       bgGradient: "from-blue-50 to-cyan-50",
       image: "/lovable-uploads/21e08520-f156-475b-8bd9-c29b5fb08535.png"
@@ -39,7 +37,6 @@ const Services = () => {
         "Real-time Features",
         "Push Notifications"
       ],
-      price: "Starting from $4,999",
       gradient: "from-purple-500 to-pink-500",
       bgGradient: "from-purple-50 to-pink-50",
       image: "/lovable-uploads/4c72861c-238d-40ed-a121-084865730dc2.png"
@@ -57,7 +54,6 @@ const Services = () => {
         "SEO & Local SEO",
         "Analytics & Reporting"
       ],
-      price: "Starting from $1,299",
       gradient: "from-green-500 to-emerald-500",
       bgGradient: "from-green-50 to-emerald-50",
       image: "/lovable-uploads/8e51d388-9313-416a-8d73-195ae692139a.png"
@@ -91,7 +87,7 @@ const Services = () => {
           </p>
         </div>
       </section>
-
+      
       {/* Services Grid */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -137,9 +133,6 @@ const Services = () => {
                   </div>
                   
                   <div className="pt-6 border-t border-gray-200">
-                    <div className={`text-3xl font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-6 animate-pulse`}>
-                      {service.price}
-                    </div>
                     <Link to="/contact">
                       <Button className={`w-full bg-gradient-to-r ${service.gradient} text-white hover:scale-110 transition-all duration-300 group-hover:shadow-xl h-12 text-lg font-semibold transform hover:rotate-1`}>
                         Get Started
