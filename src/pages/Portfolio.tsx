@@ -1,4 +1,3 @@
-
 import { ExternalLink } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -15,7 +14,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/8af97be9-901f-4fae-900a-d3fc0937fbf8.png",
       technologies: ["React", "Node.js", "TypeScript", "Tailwind CSS"],
       category: "Legal",
-      liveUrl: "#",
+      liveUrl: "https://bishoplawcorp.com/",
       githubUrl: "#"
     },
     {
@@ -25,7 +24,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/7599741f-9fdd-42fb-b8cc-29d71ff2d035.png",
       technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
       category: "Education",
-      liveUrl: "#",
+      liveUrl: "https://www.skillsiya.com/",
       githubUrl: "#"
     },
     {
@@ -35,7 +34,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/516152f4-548a-44b3-895c-f325cc4d4c6e.png",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       category: "Education",
-      liveUrl: "#",
+      liveUrl: "https://www.thinkingbridge.in/",
       githubUrl: "#"
     },
     {
@@ -45,7 +44,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/21299469-7e1a-4bee-a73f-a70d0ea25e8a.png",
       technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
       category: "Entertainment",
-      liveUrl: "#",
+      liveUrl: "https://www.jatinkhirbat.com/courses/OVERVIEW-OF-THE-MODEL-MENTORSHIP-PROGRAM-62d8f69ce4b02ed61b9ab411",
       githubUrl: "#"
     },
     {
@@ -55,7 +54,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/9008e768-e1d2-4d17-9f62-baf3448af1d9.png",
       technologies: ["React", "Node.js", "MongoDB", "Chart.js"],
       category: "Finance",
-      liveUrl: "#",
+      liveUrl: "https://www.infinityclubonline.com/",
       githubUrl: "#"
     },
     {
@@ -65,7 +64,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/a6451913-9e4e-4732-8bde-f467fbded8f4.png",
       technologies: ["React", "Node.js", "MongoDB", "TradingView"],
       category: "Finance",
-      liveUrl: "#",
+      liveUrl: "https://www.kundankishore.in/s/pages/home101",
       githubUrl: "#"
     },
     {
