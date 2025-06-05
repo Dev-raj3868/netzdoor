@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Code, Smartphone, Search, ArrowRight, Check, Sparkles } from 'lucide-react';
+import { Code, Smartphone, Search, ArrowRight, Check, Sparkles, Target, Users, Clock, Heart } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -23,7 +23,8 @@ const Services = () => {
       ],
       price: "Starting from $2,999",
       gradient: "from-blue-500 to-cyan-500",
-      bgGradient: "from-blue-50 to-cyan-50"
+      bgGradient: "from-blue-50 to-cyan-50",
+      image: "/lovable-uploads/21e08520-f156-475b-8bd9-c29b5fb08535.png"
     },
     {
       icon: Smartphone,
@@ -40,7 +41,8 @@ const Services = () => {
       ],
       price: "Starting from $4,999",
       gradient: "from-purple-500 to-pink-500",
-      bgGradient: "from-purple-50 to-pink-50"
+      bgGradient: "from-purple-50 to-pink-50",
+      image: "/lovable-uploads/4c72861c-238d-40ed-a121-084865730dc2.png"
     },
     {
       icon: Search,
@@ -57,15 +59,16 @@ const Services = () => {
       ],
       price: "Starting from $1,299",
       gradient: "from-green-500 to-emerald-500",
-      bgGradient: "from-green-50 to-emerald-50"
+      bgGradient: "from-green-50 to-emerald-50",
+      image: "/lovable-uploads/8e51d388-9313-416a-8d73-195ae692139a.png"
     }
   ];
 
   const stats = [
-    { number: "150+", label: "Projects Completed", icon: "🚀" },
-    { number: "98%", label: "Client Satisfaction", icon: "⭐" },
-    { number: "24/7", label: "Support Available", icon: "🔧" },
-    { number: "50+", label: "Happy Clients", icon: "😊" }
+    { number: "150+", label: "Projects Completed", icon: Target },
+    { number: "98%", label: "Client Satisfaction", icon: Heart },
+    { number: "24/7", label: "Support Available", icon: Clock },
+    { number: "50+", label: "Happy Clients", icon: Users }
   ];
 
   return (
@@ -96,6 +99,16 @@ const Services = () => {
             {services.map((service, index) => (
               <Card key={index} className={`relative overflow-hidden border-0 bg-gradient-to-br ${service.bgGradient} hover:shadow-2xl transition-all duration-500 group animate-scale-in`} style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                
+                {/* Service Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-20`}></div>
+                </div>
                 
                 <CardHeader className="pb-6 relative">
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
@@ -153,8 +166,8 @@ const Services = () => {
           <div className="grid md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-slide-up group" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {stat.icon}
+                <div className="mb-4 flex justify-center">
+                  <stat.icon className="h-12 w-12 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <div className="text-4xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
                   {stat.number}

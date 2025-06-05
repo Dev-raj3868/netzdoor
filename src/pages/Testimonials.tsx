@@ -92,7 +92,7 @@ const Testimonials = () => {
         </div>
       </section>
 
-      {/* Video Carousel Section */}
+      {/* Video Carousel Section - 3 videos per row */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
@@ -102,44 +102,34 @@ const Testimonials = () => {
             </p>
           </div>
           
-          <div className="relative">
-            <Carousel className="w-full animate-scale-in" opts={{ align: "start", loop: true }}>
-              <CarouselContent>
-                {videoTestimonials.map((video, index) => (
-                  <CarouselItem key={index}>
-                    <div className="p-1">
-                      <Card className="border-0 bg-white/80 backdrop-blur-sm">
-                        <CardContent className="p-6">
-                          <div className="relative rounded-3xl overflow-hidden card-3d mb-4">
-                            <div className="aspect-video">
-                              <iframe
-                                className="w-full h-full"
-                                src={`https://www.youtube.com/embed/${video.id}`}
-                                title={video.title}
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                              ></iframe>
-                            </div>
-                          </div>
-                          <div className="text-center">
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">{video.title}</h3>
-                            <p className="text-gray-600">{video.client}</p>
-                          </div>
-                        </CardContent>
-                      </Card>
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+            {videoTestimonials.map((video, index) => (
+              <Card key={index} className="border-0 bg-white/80 backdrop-blur-sm animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardContent className="p-6">
+                  <div className="relative rounded-3xl overflow-hidden card-3d mb-4">
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full"
+                        src={`https://www.youtube.com/embed/${video.id}`}
+                        title={video.title}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
                     </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="absolute -left-12 top-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700" />
-              <CarouselNext className="absolute -right-12 top-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700" />
-            </Carousel>
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{video.title}</h3>
+                    <p className="text-gray-600">{video.client}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Testimonials Grid */}
+      {/* Testimonials Grid - 3 testimonials per row */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
@@ -149,7 +139,7 @@ const Testimonials = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-6">
