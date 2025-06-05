@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Code, Palette, Smartphone, ShoppingCart, Search, Settings } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -10,11 +9,19 @@ const Services = () => {
   const services = [
     {
       icon: Code,
-      title: "Custom Web Development",
+      title: "Web Development Services",
       description: "Build scalable, high-performance web applications tailored to your business needs using cutting-edge technologies and best practices.",
       features: ["React & Next.js Development", "Full-Stack Solutions", "API Development & Integration", "Database Design & Optimization"],
       price: "Starting from $2,999",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      icon: Smartphone,
+      title: "App Development Services",
+      description: "Create powerful mobile applications for iOS and Android platforms with seamless user experiences and robust functionality.",
+      features: ["Cross-Platform Development", "Native App Development", "App Store Optimization", "Backend Integration"],
+      price: "Starting from $4,999",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Palette,
@@ -25,12 +32,20 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80"
     },
     {
-      icon: Smartphone,
-      title: "Responsive Design",
-      description: "Ensure your website looks perfect and functions flawlessly across all devices, from mobile phones to desktop computers.",
-      features: ["Mobile-First Approach", "Cross-Browser Compatibility", "Performance Optimization", "Progressive Web Apps"],
-      price: "Starting from $999",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
+      icon: Search,
+      title: "Digital Marketing Services",
+      description: "Boost your online presence and drive targeted traffic with comprehensive digital marketing strategies and campaigns.",
+      features: ["Social Media Marketing", "Content Marketing", "PPC Advertising", "Email Marketing Campaigns"],
+      price: "Starting from $1,299",
+      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      icon: Search,
+      title: "SEO Services",
+      description: "Improve your search engine rankings and drive organic traffic with comprehensive SEO strategies and technical optimizations.",
+      features: ["Technical SEO Audits", "Content Strategy & Optimization", "Local SEO Implementation", "Performance Monitoring"],
+      price: "Starting from $799",
+      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: ShoppingCart,
@@ -39,14 +54,6 @@ const Services = () => {
       features: ["Custom E-commerce Platforms", "Payment Gateway Integration", "Inventory Management Systems", "Sales Analytics & Reporting"],
       price: "Starting from $3,999",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      icon: Search,
-      title: "SEO Optimization",
-      description: "Improve your search engine rankings and drive organic traffic with comprehensive SEO strategies and technical optimizations.",
-      features: ["Technical SEO Audits", "Content Strategy & Optimization", "Local SEO Implementation", "Performance Monitoring"],
-      price: "Starting from $799",
-      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Settings,

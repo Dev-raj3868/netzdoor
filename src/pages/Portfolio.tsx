@@ -1,3 +1,4 @@
+
 import { ExternalLink } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -59,12 +60,12 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      title: "Kundan Kishore - Simplifying Investing & Trading for INDIA",
-      description: "Investment and trading education platform dedicated to simplifying complex financial concepts for Indian investors and traders.",
-      image: "/lovable-uploads/a6451913-9e4e-4732-8bde-f467fbded8f4.png",
+      title: "Kundan Kishore - A Complete Course on the Indian Stock Market",
+      description: "A complete course on the Indian Stock Market curated by Kundan Kishore for investors and traders of India.",
+      image: "/lovable-uploads/db876ce1-a87e-4b7b-b96b-4c015c74792c.png",
       technologies: ["React", "Node.js", "MongoDB", "TradingView"],
       category: "Finance",
-      liveUrl: "https://www.kundankishore.in/s/pages/home101",
+      liveUrl: "https://www.kundankishore.in/",
       githubUrl: "#"
     },
     {
@@ -169,107 +170,85 @@ const Portfolio = () => {
     },
     {
       id: 17,
-      title: "Codingrad",
-      description: "Comprehensive coding education platform with interactive courses, live sessions, and progress tracking",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+      title: "Le Pont Français - Learn French Language",
+      description: "Learn French language to excel in your career - Le Pont Francais makes your French language learning experience simple, effortless, and exciting.",
+      image: "/lovable-uploads/5aa68927-6e51-476e-8638-e7fdf08b7f80.png",
       technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
       category: "Education",
-      liveUrl: "https://codingradweb.graphy.com/",
+      liveUrl: "https://lepont-francais.com/",
       githubUrl: "#"
     },
     {
       id: 18,
-      title: "YK Technologies",
-      description: "Technology solutions and educational platform for digital transformation",
-      image: "/lovable-uploads/6a936aae-041d-40c9-9a67-841370823be0.png",
+      title: "Strategic Security Solutions",
+      description: "Providing Close Protection, Executive Protection, and Training along with Armed and Unarmed, Uniformed and Plainclothes Security Guards.",
+      image: "/lovable-uploads/71f251df-1172-4e35-8021-fad4aa06461e.png",
       technologies: ["React", "Node.js", "MongoDB", "AWS"],
-      category: "Education",
-      liveUrl: "https://yogeshkumar6203.graphy.com/",
+      category: "Security",
+      liveUrl: "https://jeffdean4262.ongraphy.com/",
       githubUrl: "#"
     },
     {
       id: 19,
-      title: "CelestLife",
-      description: "Wellness and lifestyle platform for holistic health solutions",
-      image: "/lovable-uploads/bfb63eeb-9369-4fbd-a5c7-219a75316bbf.png",
+      title: "SPICA E-Learning Platform",
+      description: "Expand your access to learning through inclusive & accessible learning experience with comprehensive educational programs.",
+      image: "/lovable-uploads/96a9419e-5bae-4f1e-ac5f-6ea22d69dca1.png",
       technologies: ["React", "Express", "MySQL", "Stripe"],
-      category: "Healthcare",
-      liveUrl: "https://www.celestlife.com/",
+      category: "Education",
+      liveUrl: "https://learn.spicacbe.com/",
       githubUrl: "#"
     },
     {
       id: 20,
-      title: "The School of Bass",
-      description: "Online music education platform for bass guitar lessons in Hindi",
-      image: "/lovable-uploads/e61abd28-188b-4a2d-bce8-e4f80ee951dd.png",
+      title: "Share Funds - Stock Market Courses",
+      description: "Take the 1st step for Financial Freedom with comprehensive stock market courses and trading education programs.",
+      image: "/lovable-uploads/0cf5ef5c-264c-4e70-b54c-cc0b98a359b3.png",
       technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
-      category: "Education",
-      liveUrl: "https://www.theschoolofbass.in/s/store/courses/description/Bass-guitar-lessons-for-beginners-in-Hindi",
+      category: "Finance",
+      liveUrl: "https://www.learnfrenchenligne.com/",
       githubUrl: "#"
     },
     {
       id: 21,
-      title: "Coach Nikhil Gambhir",
-      description: "Personal coaching and fitness training platform",
-      image: "/lovable-uploads/10bc9519-a43c-4267-ac98-5db1743788bf.png",
+      title: "Get Set Jump",
+      description: "How To Talk To Anyone With Confidence - Take this power-packed mini-course and experience the power of communication.",
+      image: "/lovable-uploads/ec4cb0c5-fe65-4609-8781-09da00380011.png",
       technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-      category: "Fitness",
-      liveUrl: "#",
+      category: "Communication",
+      liveUrl: "https://www.getsetjump.com/",
       githubUrl: "#"
     },
     {
       id: 22,
-      title: "Neuron Nursing Academy",
-      description: "Comprehensive nursing education and training platform",
-      image: "/lovable-uploads/a6d7c263-d2a8-46e6-99a0-98fe2d5bb090.png",
+      title: "The Financial Ladder",
+      description: "We maximize your Financial Growth through personal mentorship programs and comprehensive financial education.",
+      image: "/lovable-uploads/80232cc0-6641-45a1-b7d6-298bccdd5864.png",
       technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
-      category: "Education",
-      liveUrl: "https://www.neuronnursingacademy.com/",
+      category: "Finance",
+      liveUrl: "https://learn.thefinancialladder.com/",
       githubUrl: "#"
     },
     {
       id: 23,
-      title: "Louise Hay",
-      description: "Educational platform for personal development and wellness",
-      image: "/lovable-uploads/adb10630-f885-457d-977a-254c3360b614.png",
+      title: "Learn French Enligne",
+      description: "A learning platform that helps you to learn French with world-class training and development programs developed by top teachers.",
+      image: "/lovable-uploads/d6e1f4a6-96ef-4e1d-8aa2-76cb16eb2088.png",
       technologies: ["React", "Express", "MongoDB", "Stripe"],
       category: "Education",
-      liveUrl: "https://www.infoworldeducation.com/",
+      liveUrl: "https://www.learnfrenchenligne.com/",
       githubUrl: "#"
     },
     {
       id: 24,
-      title: "Language Veda",
-      description: "Language learning platform with comprehensive courses",
-      image: "/lovable-uploads/2339b1f5-54aa-47dc-9967-2c4055ced91d.png",
+      title: "FnASkills",
+      description: "FnASkills is a Premier Finance & Accounting Training & Education Provider for Individuals & Corporates creating true business impact.",
+      image: "/lovable-uploads/b29b36d5-e3b6-46ea-8dd7-e61dbf8a3ee0.png",
       technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
-      category: "Education",
-      liveUrl: "https://jayadeepamaria6883.ongraphy.com/",
-      githubUrl: "#"
-    },
-    {
-      id: 25,
-      title: "Renu Vijay Artist (artzn colours)",
-      description: "Art gallery and online art education platform",
-      image: "/lovable-uploads/e4ff6cdf-1641-4b1a-ba7f-8a7c84bcab41.png",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      category: "Art",
+      category: "Finance",
       liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      id: 26,
-      title: "Breakthrough with Karan Rawat",
-      description: "Personal development and breakthrough coaching platform",
-      image: "/lovable-uploads/f6e4b7ad-d9b2-4af2-a422-39185e60c5ca.png",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      category: "Coaching",
-      liveUrl: "https://www.breakthroughwithkaranrawat.com/",
       githubUrl: "#"
     }
   ];
-
-  const categories = ["All", "Education", "Legal", "Finance", "Entertainment", "Healthcare", "Art", "Fitness", "Coaching", "Fashion"];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
@@ -287,38 +266,17 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Filter Categories */}
-      <section className="pb-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap justify-center gap-4 animate-fade-in">
-            {categories.map((category, index) => (
-              <Button
-                key={category}
-                variant={index === 0 ? "default" : "outline"}
-                className={`rounded-full px-6 py-2 transition-all duration-200 hover:scale-105 ${
-                  index === 0 
-                    ? "gradient-blue text-white" 
-                    : "border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
-                }`}
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Portfolio Grid */}
       <section className="py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={project.id} className="card-3d hover:shadow-xl transition-all duration-300 animate-scale-in border-0 bg-white/80 backdrop-blur-sm overflow-hidden group" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden h-64">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                   />
                   <Badge className="absolute top-4 right-4 gradient-blue text-white">
                     {project.category}
