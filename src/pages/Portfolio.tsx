@@ -247,6 +247,106 @@ const Portfolio = () => {
       category: "Finance",
       liveUrl: "#",
       githubUrl: "#"
+    },
+    {
+      id: 25,
+      title: "Codingrad - Learn Top Technologies in Regional Languages",
+      description: "Learn Top Technologies in Regional Languages - We believe that starting and understanding things in the native language will bring the best from anyone and makes them master in the field without any doubt.",
+      image: "/lovable-uploads/996a6e26-cd09-47a3-ab4b-28bac50be083.png",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Education",
+      liveUrl: "https://codingradweb.graphy.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 26,
+      title: "Breakthrough with Karan Rawat",
+      description: "Become a strategic brand & marketing professional. Hack your career growth by improving your mindset, concepts and skillsets in just 21 days.",
+      image: "/lovable-uploads/29b1c97d-326c-4caa-b5dc-863bb93bad61.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Marketing",
+      liveUrl: "https://www.breakthroughwithkaranrawat.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 27,
+      title: "Kundan Kishore - Simplifying Investing & Trading for INDIA",
+      description: "Simplifying Investing & Trading for INDIA - Complexity is the Biggest Lie. Complete course on the Indian Stock Market for investors and traders.",
+      image: "/lovable-uploads/dd8b0018-8c15-476a-82f4-21c4ac531e37.png",
+      technologies: ["React", "Node.js", "MongoDB", "TradingView"],
+      category: "Finance",
+      liveUrl: "https://www.kundankishore.in/s/pages/home101",
+      githubUrl: "#"
+    },
+    {
+      id: 28,
+      title: "CelestLife - Experience the joy of transformation today!",
+      description: "At CelestLife it is our goal to create a community and develop a movement of people who believe in the possibility and ability to live the life of their dreams. We empower people to actualize their limitless potential and to master the art of Life By Design.",
+      image: "/lovable-uploads/badc188b-ea88-4e5f-a4f3-3f5807a4e61a.png",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Lifestyle",
+      liveUrl: "https://www.celestlife.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 29,
+      title: "The School of Bass - Saurabh Suman",
+      description: "Get the complete guide to starting up - Bass guitar lessons for beginners in Hindi. Learn step by step bass guitar course with 90+ mins of content.",
+      image: "/lovable-uploads/2493d65d-7e60-4aa2-bd3a-c260673edc7f.png",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Music",
+      liveUrl: "https://www.theschoolofbass.in/s/store/courses/description/Bass-guitar-lessons-for-beginners-in-Hindi",
+      githubUrl: "#"
+    },
+    {
+      id: 30,
+      title: "Coach Nikhil Gambhir",
+      description: "Nikhil Gambhir leads the charts in India as a India's No.1 Multi Millionaire Coach Business Strategist, Sales Coach, Motivational Speaker, Transformational Trainer & Digital Entrepreneur.",
+      image: "/lovable-uploads/37d0a224-6d86-462b-a6fd-26641ec0a86a.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Coaching",
+      liveUrl: "https://www.coachnikhilgambhir.com/lander",
+      githubUrl: "#"
+    },
+    {
+      id: 31,
+      title: "Neuron Nursing Academy",
+      description: "NEURON NURSING ACADEMY - Connecting your dreams. Online nursing officer coaching for various nursing entrance exams. Classes are available in English, Hindi, Malayalam.",
+      image: "/lovable-uploads/00dd3e32-6e3b-4357-a070-607beb310c59.png",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Education",
+      liveUrl: "https://www.neuronnursingacademy.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 32,
+      title: "Louise Hay - InfoWorld Education",
+      description: "Through Louise's healing techniques and positive philosophy, millions have learned to create more of what they want in their lives - more wellness in their bodies, minds, and spirits.",
+      image: "/lovable-uploads/48c896d5-2661-4d05-a86d-df33d162d0bc.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Wellness",
+      liveUrl: "https://www.infoworldeducation.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 33,
+      title: "Languageveda - Language Matters",
+      description: "Get into the world of learning languages with Languageveda: Explore the beauty of Indian Languages and culture. Languageveda is hub of regional Language experts.",
+      image: "/lovable-uploads/b2dd456e-4941-4f3a-90c2-5b0eac4da024.png",
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      category: "Education",
+      liveUrl: "https://jayadeepamaria6883.ongraphy.com/",
+      githubUrl: "#"
+    },
+    {
+      id: 34,
+      title: "Renu Vijay Artist (artzncolours)",
+      description: "With a Vision to spread the richness of Handmade| Homemade art Globally. Explore The Artist Within You - Learn how to create beautiful art and explore your creativity.",
+      image: "/lovable-uploads/e5a4d7f2-8a88-4450-95a5-6b660628b2ac.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      category: "Art",
+      liveUrl: "https://courses.artzncolours.com/",
+      githubUrl: "#"
     }
   ];
 
@@ -261,7 +361,7 @@ const Portfolio = () => {
             Our <span className="gradient-text">Portfolio</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in">
-            Explore our collection of 24+ successful projects and see how we've helped businesses achieve their digital goals
+            Explore our collection of 34+ successful projects and see how we've helped businesses achieve their digital goals
           </p>
         </div>
       </section>
@@ -318,7 +418,7 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="animate-slide-up">
-              <div className="text-4xl font-bold text-white mb-2">24+</div>
+              <div className="text-4xl font-bold text-white mb-2">34+</div>
               <div className="text-blue-200">Projects Completed</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
