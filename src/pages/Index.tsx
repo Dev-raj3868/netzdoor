@@ -215,7 +215,7 @@ const Index = () => {
                   className="rounded-lg shadow-lg card-3d"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=400&q=80" 
+                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80" 
                   alt="Healthcare Industry"
                   className="rounded-lg shadow-lg card-3d mt-8"
                 />

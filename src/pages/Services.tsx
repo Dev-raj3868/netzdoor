@@ -97,24 +97,26 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className={`relative overflow-hidden border-0 bg-gradient-to-br ${service.bgGradient} hover:shadow-2xl transition-all duration-500 group animate-scale-in`} style={{ animationDelay: `${index * 0.2}s` }}>
+              <Card key={index} className={`relative overflow-hidden border-0 bg-gradient-to-br ${service.bgGradient} hover:shadow-2xl transition-all duration-500 group animate-scale-in transform hover:scale-105 hover:rotate-1`} style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
                 
                 {/* Service Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-64 overflow-hidden rounded-t-lg">
                   <img 
                     src={service.image} 
                     alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 transform hover:rotate-2"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-20`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}></div>
+                  <div className="absolute top-4 right-4">
+                    <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${service.gradient} flex items-center justify-center shadow-lg animate-pulse`}>
+                      <service.icon className="h-6 w-6 text-white" />
+                    </div>
+                  </div>
                 </div>
                 
                 <CardHeader className="pb-6 relative">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <CardTitle className="text-2xl font-bold text-gray-900 mb-2">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">{service.title}</CardTitle>
                   <p className={`text-lg font-semibold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}>
                     {service.subtitle}
                   </p>
@@ -125,8 +127,8 @@ const Services = () => {
                   
                   <div className="space-y-3">
                     {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-3 text-gray-700">
-                        <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${service.gradient} flex items-center justify-center flex-shrink-0`}>
+                      <div key={idx} className="flex items-center gap-3 text-gray-700 transform hover:translate-x-2 transition-transform duration-200">
+                        <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${service.gradient} flex items-center justify-center flex-shrink-0 animate-pulse`}>
                           <Check className="h-3 w-3 text-white" />
                         </div>
                         <span className="text-sm font-medium">{feature}</span>
@@ -135,13 +137,13 @@ const Services = () => {
                   </div>
                   
                   <div className="pt-6 border-t border-gray-200">
-                    <div className={`text-3xl font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-6`}>
+                    <div className={`text-3xl font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-6 animate-pulse`}>
                       {service.price}
                     </div>
                     <Link to="/contact">
-                      <Button className={`w-full bg-gradient-to-r ${service.gradient} text-white hover:scale-105 transition-all duration-300 group-hover:shadow-lg h-12 text-lg font-semibold`}>
+                      <Button className={`w-full bg-gradient-to-r ${service.gradient} text-white hover:scale-110 transition-all duration-300 group-hover:shadow-xl h-12 text-lg font-semibold transform hover:rotate-1`}>
                         Get Started
-                        <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                        <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
                       </Button>
                     </Link>
                   </div>
@@ -165,11 +167,11 @@ const Services = () => {
           
           <div className="grid md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center animate-slide-up group" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={index} className="text-center animate-slide-up group transform hover:scale-110 transition-all duration-300" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="mb-4 flex justify-center">
-                  <stat.icon className="h-12 w-12 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
+                  <stat.icon className="h-12 w-12 text-blue-400 group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <div className="text-4xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
+                <div className="text-4xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </div>
                 <div className="text-gray-300 font-medium">{stat.label}</div>
@@ -187,7 +189,7 @@ const Services = () => {
             Let's collaborate to bring your vision to life with cutting-edge technology and innovative solutions
           </p>
           <Link to="/contact">
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-6 text-xl font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-6 text-xl font-semibold rounded-full hover:scale-110 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:rotate-1">
               Start Your Project Today
               <ArrowRight className="h-6 w-6 ml-3" />
             </Button>
